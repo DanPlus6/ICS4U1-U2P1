@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+#card-validator {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ec;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: "DM Sans", sans-serif;
+}
+
+#validator-form label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: 600;
+    color: #334155;
+}
+
+#validator-form input,
+#validator-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#validator-form input:focus,
+#validator-form select:focus {
+    outline: 2px solid #f83838;
+    border-color: #c70202;
+}
+
+.expiration-fields {
+    display: flex;
+    gap: 16px;
+}
+
+.expiration-fields > div {
+    flex: 1;
+    min-width: 0;
+}
+
+#validator-form button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #9e3030;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+}
+
+#validator-form button:hover {
+    background-color: #600808;
+}
+
+#validation-results {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #553333;
+}

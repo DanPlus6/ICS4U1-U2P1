@@ -10,10 +10,74 @@
         <title>Credit Card Validator</title>
     </head>
     <body>
-        <button>Back to Main</button>
+        <nav class="navbar">
+            <div class="navbar-logo">my<span>Card</span></div>
+
+            <button type="button" id="btn-back" class="back-button">
+                ← Back to Main
+            </button>
+        </nav>
         
         <h1>Validate your credit card.</h1>
-        <section>
+        <p>Enter card details to validate them.</p>
+
+        <section id="card-validator">
+
+            <form id="validator-form">
+                <label for="cardholder-name">Cardholder Name</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" placeholder="John Smith" required>
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456"  maxlength="23" required>
+                <label for="card-network">Card Network</label>
+                <select id="card-network" name="card-network" required>
+                    <option value = "">Select a network</option>
+                    <option value = "visa">Visa</option>
+                    <option value = "mastercard">Mastercard</option>
+                    <option value = "amex">American Express</option>
+                    <option value="discover">Discover</option>
+                    <option value="unknown">Unknown / Other</option>
+                </select>
+                <div class="expiration-fields">
+                    <div>
+                        <label for="expiry-month">Expiration Month</label>
+                        <select id="expiry-month" name="expiry-month" required>
+                            <option value="">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>  
+                    <div>
+                        <label for="expiry-year">Expiration Year</label>
+                        <input type="number" id="expiry-year" name="expiry-year" placeholder="YYYY" min="2026" max="2100" required>
+                    </div> 
+                </div>
+
+                <label for="card-issuer">Issuing Company (Optional)</label>
+                <input type="text" id="card-issuer" name="card-issuer" placeholder="CIBC">
+
+                <label for="retail-partnership">Retail Partnership</label>
+                <select id="retail-partnership" name="retail-partnership">
+                    <option value="none">None / Unknown</option>
+                    <option value="costco">Costco</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Validate Card</button>
+
+                <div id="validation-results" aria-live="polite">
+                    Results will appear here.
+                </div>
+            </form>
         </section>
         <script src="validate.ts"></script>
     </body>

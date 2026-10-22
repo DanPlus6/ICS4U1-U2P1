@@ -1,12 +1,12 @@
 /**
- * Calculate Luhn's sum for a credit card number
- * using Luhn's algorithm
+ * Calculate Luhn's sum for a credit card number using Luhn's algorithm
  * @param number the processing credit card number, should be a valid number
  * @param hasCheck whether check digit is present in card number, default true
  * @returns luhn sum of card number
  */
-export function LuhnSum(cardNum: string, hasCheck: boolean = true): number {
-    const N: number = cardNum.length;
+export function LuhnSum(cardNum: string|number, hasCheck: boolean = true): number {
+    const card: string = `${cardNum}`;
+    const N: number = card.length;
     // check card is of valid length
     if (N < 2) return -1;
 
@@ -16,7 +16,7 @@ export function LuhnSum(cardNum: string, hasCheck: boolean = true): number {
     // check digits from right to left
     for (let i = N-1; i >= 0; --i) {
         try {
-            let digit: number = Number(cardNum[i]);
+            let digit: number = Number(card[i]);
             
             // double every other digit
             if (double) {

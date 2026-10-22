@@ -32,13 +32,62 @@ h1 {
     border-color: #730a0a;
 }
 
-.generate-button{
-    padding: 10px 16px;
-    border: 1px solid #fff0f0;
-    border-radius: 9px;
-    background-color: #ffe6e6;
-    color: #553333;
-    font-size: 1.9rem;
+
+#card-generator {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ec;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    font-family: "DM Sans", sans-serif;
+}
+
+#generator-form label {
+    display: block;
+    margin: 16px 0 7px;
+    font-weight: 600;
+    color: #334155;
+}
+
+#generator-form input,
+#generator-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+#generator-form input:focus,
+#generator-form select:focus {
+    outline: 2px solid #f83838;
+    border-color: #c70202;
+}
+
+.expiration-fields {
+    display: flex;
+    gap: 16px;
+}
+
+.expiration-fields > div {
+    flex: 1;
+    min-width: 0;
+}
+
+#generator-form button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background-color: #9e3030;
+    color: white;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     font-family: "DM Sans", sans-serif;
@@ -48,21 +97,15 @@ h1 {
                 border-color 0.2s ease;
 }
 
-.generate-button:hover{
-    background-color: #710303;
-    color: #ffffff;
-    border-color: #730a0a;
+#generator-form button:hover {
+    background-color: #600808;
+    
 }
 
-#generate-box{
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    max-width: 150px;
-    margin: 10px auto;
-    padding: 28px;
-    background-color: #ffffff;
-    border: 1px solid #dce4ec;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+#generator-results {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f1f5f9;
+    color: #553333;
 }

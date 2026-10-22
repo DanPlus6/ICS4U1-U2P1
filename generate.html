@@ -10,11 +10,19 @@
         <title>Credit Card Generator</title>
     </head>
     <body>
-        <button>Back to Main</button>
+        <nav class="navbar">
+            <div class="navbar-logo">my<span>Card</span></div>
+
+            <button type="button" id="btn-back" class="back-button">
+                ← Back to Main
+            </button>
+        </nav>
         
         <h1>Generate your credit card.</h1>
 
-        <section>
+        <section id="generate-box">
+            <button type="button" id="generate-card" class="generate-button">Generate</button>
+            <button type="button" id="save-card" class="save-button">Save</button>
         </section>
         <script src="generate.ts"></script>
     </body>

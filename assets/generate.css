@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #edeff3;
+    margin: 65px auto 105px;
+    padding: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.save-button{
+    display: none;
+    padding: 10px 16px;
+    border: 1px solid #fff0f0;
+    border-radius: 9px;
+    background-color: #ffe6e6;
+    color: #553333;
+    font-size: 1.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.save-button:hover{
+    background-color: #710303;
+    color: #ffffff;
+    border-color: #730a0a;
+}
+
+.generate-button{
+    padding: 10px 16px;
+    border: 1px solid #fff0f0;
+    border-radius: 9px;
+    background-color: #ffe6e6;
+    color: #553333;
+    font-size: 1.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
+}
+
+.generate-button:hover{
+    background-color: #710303;
+    color: #ffffff;
+    border-color: #730a0a;
+}
+
+#generate-box{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    max-width: 150px;
+    margin: 10px auto;
+    padding: 28px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ec;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}

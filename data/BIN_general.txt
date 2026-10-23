@@ -1,0 +1,18 @@
+American Express    34, 37
+Bankcard	5610, 560221-560225
+China UnionPay	62
+Diners Club Carte Blanche	300-305
+Diners Club enRoute	2014, 2149
+Diners Club International	36
+Diners Club United States & Canada	54, 55
+Discover Card	6011, 622126-622925, 644-649, 65
+InterPayment	636
+InstaPayment	637-639
+JCB	3528-3589
+Laser	6304, 6706, 6771, 6709
+Maestro	50, 56-58, 6
+MasterCard	2221-2720, 51-55
+Solo	6334, 6767
+Switch	4903, 4905, 4911, 4936, 564182, 633110, 6333, 6759
+Visa	4
+UATP	1

@@ -78,10 +78,15 @@ body > p {
     font-weight: 600;
     cursor: pointer;
     font-family: "DM Sans", sans-serif;
+
+    transition: background-color 0.2s ease,
+                color 0.2s ease,
+                border-color 0.2s ease;
 }
 
 #validator-form button:hover {
     background-color: #600808;
+    
 }
 
 #validation-results {
@@ -90,56 +95,5 @@ body > p {
     border-radius: 8px;
     background-color: #f1f5f9;
     color: #553333;
-}
-
-.back-button {
-    padding: 10px 16px;
-    border: 1px solid #fff8f8;
-    border-radius: 9px;
-    background-color: #fff7f7;
-    color: #553333;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    font-family: "DM Sans", sans-serif;
-
-    transition: background-color 0.2s ease,
-                color 0.2s ease,
-                border-color 0.2s ease;
-}
-
-.back-button:hover {
-    background-color: #710303;
-    color: #ffffff;
-    border-color: #730a0a;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 16px 7%;
-    background-color: #450101;
-    border-bottom: 1px solid #770f0f;
-    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.06);
-}
-
-.navbar-logo {
-    font-size: 1.7rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    color: #f7e0e0;
-    text-decoration: none;
-    font-family: "DM Sans", sans-serif;
-}
-
-.navbar-logo span {
-    color: #fcabab;
-    font-family: "DM Sans", sans-serif;
 }
 

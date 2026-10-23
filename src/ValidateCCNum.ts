@@ -1,13 +1,13 @@
 // overload to accept string and number as input
-export function Luhn(card: string): boolean;
-export function Luhn(card: number): boolean;
+export function ValidateCCNum(card: string): boolean;
+export function ValidateCCNum(card: number): boolean;
 
 /**
  * Uses Luhn's algorithm to check if a credit card
  * number is valid
  * @param card credit card number to check
  */
-export function Luhn(card: string|number): boolean {
+export function ValidateCCNum(card: string|number): boolean {
     // preprocess input
     const cardNum: string = `${card}`;
 
